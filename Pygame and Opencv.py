@@ -5,7 +5,7 @@ import numpy as np
 webcam = cv.VideoCapture(0)
 
 pg.init()
-window = pygame.display.set_mode([640,480])
+window = pg.display.set_mode([640,480])
 
 while True:
     _,frame = webcam.read()
@@ -15,6 +15,7 @@ while True:
     
     window.blit(frame, (0,0))
     pg.display.update()
+    
     for event in pg.event.get():
         if event.type == pg.KEYDOWN:
             pg.quit()
