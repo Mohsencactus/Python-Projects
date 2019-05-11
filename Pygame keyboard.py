@@ -13,8 +13,8 @@ while True:
             # key S pressed
             if event.key == pg.K_s:
                 print("Go back")
-            # key Q pressed
-            if event.key == pg.K_q:
+            # key esc pressed
+            if event.key == pg.K_ESCAPE:
                 pg.quit()
         elif event.type == pg.KEYUP:
                 print("Stop")
