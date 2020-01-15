@@ -1,0 +1,76 @@
+body,html{
+  height: auto;
+}
+
+.bgimg{
+  position: fixed;
+  background-image: url("backg.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.center{
+  background: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+
+.introbox{
+  
+  padding: 0% 10% 20% 10%;
+}
+
+.introbox h1{
+  text-align: right;
+  padding: 5% 0% 1% 0%;
+  font-size: x-large;
+  color: black;
+}
+
+.introbox p{
+  text-align: right;
+  font-size: medium;
+  color: black;
+}
+
+.top{
+  position: relative;;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #222;
+  overflow: hidden;
+}
+.top a{
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.top a:hover{
+  background-color: #000;
+  color: yellow;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer p{
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+}

@@ -26,6 +26,7 @@ SX = 40
 SY = 40
 scorelist = []
 checker = []
+fexit = False
 
 cv.namedWindow("window",cv.WINDOW_NORMAL)
 model = joblib.load('Fish.pkl') 
@@ -72,6 +73,9 @@ while True:
         cv.imshow('window',filtered)
         if cv.waitKey(1) == ord('q'):
             cv.destroyAllWindows()
+            fexit = True
             break
+    if fexit == True:
+        break
     if caught != True:
         click()
